@@ -1,0 +1,9 @@
+<html>
+    <head><title>Index</title></head>
+    <body>
+        <h1>Index</h1>
+        <% @articles.each do |article| %>
+            <h3><a href="/articles/<%= article.id%>"><%= article.title %></a></h3>
+            <% end %>
+    </body>
+</html>
