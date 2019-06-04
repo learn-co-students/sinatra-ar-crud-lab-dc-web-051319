@@ -1,0 +1,14 @@
+<html>
+    <head><title>EDIT RECORD</title></head>
+    <body>
+        <h1>EDITING!</h1>
+        <form action="/articles/<%= @article.id %>" method="POST">
+        <input id="hidden" type="hidden" name="_method" value="PATCH">
+        <label for="article_title">Title</label>
+        <input type="text" name="title" id="title" value="<%= @article.title %>">
+        <label for="article_content">Content</label>
+        <input type="text" name="content" id="content" value="<%= @article.content %>">
+        <input type="submit" value="EDIT" >
+        </form>
+    </body>
+</html>
